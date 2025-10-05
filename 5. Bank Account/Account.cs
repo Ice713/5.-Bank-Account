@@ -8,6 +8,15 @@ namespace _5.Bank_Account
 {
     internal class Account
     {
-        
+        public decimal Balance { get; private set; }
+
+        public Account(decimal initialBalance = 0)
+        {
+            if (initialBalance < 0)
+            {
+                throw new ArgumentException("Initial balance cannot be negative.");
+            }
+            Balance = initialBalance;
+        }
     }
 }
