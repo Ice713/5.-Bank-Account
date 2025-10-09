@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.buttonDeposit = new System.Windows.Forms.Button();
             this.buttonBalance = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAmount)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +77,7 @@
             this.buttonDeposit.TabIndex = 3;
             this.buttonDeposit.Text = "Deposit";
             this.buttonDeposit.UseVisualStyleBackColor = true;
+            this.buttonDeposit.Click += new System.EventHandler(this.buttonDeposit_Click);
             // 
             // buttonBalance
             // 
@@ -85,12 +87,23 @@
             this.buttonBalance.TabIndex = 4;
             this.buttonBalance.Text = "Balance";
             this.buttonBalance.UseVisualStyleBackColor = true;
+            this.buttonBalance.Click += new System.EventHandler(this.buttonBalance_Click);
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(335, 139);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(47, 16);
+            this.lblStatus.TabIndex = 5;
+            this.lblStatus.Text = "Status:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.buttonBalance);
             this.Controls.Add(this.buttonDeposit);
             this.Controls.Add(this.label2);
@@ -111,6 +124,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonDeposit;
         private System.Windows.Forms.Button buttonBalance;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
 

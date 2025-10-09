@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace _5.Bank_Account
 {
@@ -18,6 +19,7 @@ namespace _5.Bank_Account
         {
             decimal interest = Balance * InterestRate;
             Deposit(interest);
+            MessageBox.Show($"Interest of {interest:C} added. New balance is {Balance:C}.", "Interest Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return interest;
         }
     }
