@@ -71,7 +71,7 @@
             // 
             // buttonDeposit
             // 
-            this.buttonDeposit.Location = new System.Drawing.Point(320, 165);
+            this.buttonDeposit.Location = new System.Drawing.Point(322, 198);
             this.buttonDeposit.Name = "buttonDeposit";
             this.buttonDeposit.Size = new System.Drawing.Size(75, 23);
             this.buttonDeposit.TabIndex = 3;
@@ -81,7 +81,7 @@
             // 
             // buttonBalance
             // 
-            this.buttonBalance.Location = new System.Drawing.Point(320, 194);
+            this.buttonBalance.Location = new System.Drawing.Point(322, 227);
             this.buttonBalance.Name = "buttonBalance";
             this.buttonBalance.Size = new System.Drawing.Size(75, 23);
             this.buttonBalance.TabIndex = 4;
